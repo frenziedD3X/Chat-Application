@@ -31,7 +31,7 @@ pip install -r requirements.txt
 
 ### 2. Set Environment Variables
 
-Before running the app, you need to set the following environment variables. You can set them manually in your operating system or through a deployment platform (e.g., Heroku, Docker).
+Before running the app, you need to set the following environment variables. You can set them manually in your operating system or through a deployment platform (e.g., Render).
 
 #### Required Environment Variables:
 
@@ -73,6 +73,15 @@ python app.py
 ```
 
 The Flask server will start, and you can access the application at `http://127.0.0.1:5000`.
+
+### 4. Frontend Chat Application
+
+A simple frontend chat application is also provided. The frontend is deployed and connected to the backend via a service like Render, meaning you don't need to worry about manually setting up the frontend on your local machine.
+
+#### How to Access the Frontend:
+
+1. The frontend is hosted on Render, and you can access it by visiting the deployed URL (provided after deploying your app).
+2. The frontend is already connected to the backend Flask API, allowing users to register, login, and send messages seamlessly.
 
 ## API Endpoints
 
@@ -194,4 +203,3 @@ Retrieves users the current user has messaged, returning their names.
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 ```
-
