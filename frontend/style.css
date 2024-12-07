@@ -1,0 +1,141 @@
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f8f9fa;
+  color: #6c757d;
+  font-family: Arial, sans-serif;
+}
+
+#app {
+  width: 90%;
+  max-width: 900px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+h1, h2, h3 {
+  text-align: center;
+  color: #333;
+}
+
+input, button {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #ffc107;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#auth-container, #chat-container {
+  padding: 20px;
+}
+
+#user-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#recent-contacts, #user-search {
+  margin: 20px 0;
+}
+
+
+
+#messages {
+  height: 300px;
+  overflow-y: scroll;
+  border: 1px solid #ddd;
+  margin: 10px 0;
+  padding: 10px;
+  background-color: #f9f9f9;
+}
+
+.message {
+  margin: 5px 0;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.message.self {
+  text-align: right;
+  background-color: #007bff;
+  color: #fff;
+}
+
+.message.other {
+  text-align: left;
+  background-color: #ddd;
+  color: #6c757d;
+}
+
+#conversations-list, #search-results {
+  height: 300px; /* Set a fixed height for the list */
+  overflow-y: auto; /* Enable vertical scrolling */
+  border: 1px solid #ddd; /* Add a border for distinction */
+  padding: 10px;
+  background-color: #f8f9fa; /* Light background for the lists */
+  border-radius: 5px;
+}
+
+/* List Items Styling */
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  padding: 12px;
+  border: 1px solid #ddd;
+  margin-bottom: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+  background-color: #f8f9fa;
+}
+
+li:hover {
+  background-color: #f1f3f5; /* Light hover effect */
+}
+
+/* Scrollbar Styling */
+#conversations-list::-webkit-scrollbar, 
+#search-results::-webkit-scrollbar {
+  width: 8px; /* Set the width of the scrollbar */
+}
+
+#conversations-list::-webkit-scrollbar-thumb, 
+#search-results::-webkit-scrollbar-thumb {
+  background-color: #007bff; /* Color of the scrollbar thumb */
+  border-radius: 4px; /* Rounded corners for the scrollbar */
+}
+
+#conversations-list::-webkit-scrollbar-track, 
+#search-results::-webkit-scrollbar-track {
+  background-color: #f0f4f8; /* Track color */
+}
