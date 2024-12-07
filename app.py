@@ -4,11 +4,10 @@ import firebase_admin
 from firebase_admin import credentials, firestore, auth
 import requests
 import os
-from dotenv import load_dotenv
+
 import json
 
-# Load environment variables from .env file
-load_dotenv()
+
 
 # Initialize Flask App
 app = Flask(__name__)
